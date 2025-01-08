@@ -36,7 +36,7 @@
         // 动态设置背景音乐文件
         window.onload = function() {
             var audio = document.getElementById('backgroundMusic');
-            var randomMusicFile = "media/Music" + Math.ceil(Math.random() * 50) + ".mp3"; // 随机选择一个音乐文件
+            var randomMusicFile = "media/music" + Math.ceil(Math.random() * 50) + ".mp3"; // 随机选择一个音乐文件
             var source = document.createElement('source');
             source.src = randomMusicFile; // 设置音频文件路径
             source.type = 'audio/mpeg'; // 音频格式
