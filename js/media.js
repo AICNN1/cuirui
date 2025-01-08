@@ -52,5 +52,5 @@ $(function () {
     });
 
     // 设置背景图片，确保与音乐对应
-    $image.css('backgroundImage', 'url("media/on' + randomIndex + '.JPG")');
+    $image.css('backgroundImage', 'url("media/on' + randomIndex + '.jpg")');
 });
