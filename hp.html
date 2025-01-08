@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 修复 meta 标签的重复 -->
+    <title>5</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="hp">
+    <!-- 背景音乐 -->
+    <audio id="backgroundMusic" loop>
+        您的浏览器不支持音频标签。
+    </audio>
+
+    <div class="content">
+        <h2>欢迎你的到来呀</h2>
+        <p>²⁰²⁵/₀₁.₀₁🎬咔 ！咔！咔！2024杀青啦 🧨2025开启以美好为主题的剧本🎉🎬</p>
+        <p>2024已经悄然离去，2025也悄悄到来。</p>
+        <p>凡是过往皆为序章，2024的所有烦恼与遗憾都已经过去了。</p>
+        <p>愿我们在新的一年里拥抱梦想，远离烦恼，每天都有好心情。</p>
+        <p>乘着2025的列车，向着美好的未来出发，未来皆为可盼。🫧</p>
+
+        <div class="options">
+            <button id="likeButton">我很喜欢</button>
+            <button id="dislikeButton">我不喜欢</button>
+            <button id="whatisthisButton">这是什么呀</button>
+        </div>
+
+        <p id="happyMessage" class="hidden">🎇🎉那我很高兴呦o(*￣▽￣*)ブ🤭</p>
+    </div>
+
+
+    <script src="js/hp.js"></script>
+
+    <script>
+        // 动态设置背景音乐文件
+        window.onload = function() {
+            var audio = document.getElementById('backgroundMusic');
+            var randomMusicFile = "media/Music" + Math.ceil(Math.random() * 50) + ".mp3"; // 随机选择一个音乐文件
+            var source = document.createElement('source');
+            source.src = randomMusicFile; // 设置音频文件路径
+            source.type = 'audio/mpeg'; // 音频格式
+            audio.appendChild(source); // 添加到音频标签中
+
+            // 尝试播放背景音乐
+            audio.play();
+        };
+
+        // 监听用户交互以开始播放背景音乐
+        document.body.addEventListener('click', function() {
+            var audio = document.getElementById('backgroundMusic');
+            audio.play(); // 播放音频
+        });
+    </script>
+</body>
+</html>

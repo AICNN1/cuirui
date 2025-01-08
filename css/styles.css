@@ -1,0 +1,80 @@
+/* 设置基本的页面样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFB6C1;
+}
+
+.login-page, .hp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff3385;
+}
+
+#error-message {
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.options button {
+    margin: 10px;
+    width: 180px;
+    padding: 10px;
+}
+
+#happyMessage {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+}
+
+/* 移除背景白色框 */
+.login-container, .content {
+    text-align: center;
+}
+.login-container {
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+.content {
+    padding: 30px;
+    border-radius: 10px;
+    color: #ff0000;
+
+}
