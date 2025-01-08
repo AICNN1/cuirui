@@ -11,7 +11,7 @@ $(function () {
 
     // 使用随机数设置音乐和图片路径
     mediaObj = new Audio();
-    mediaObj.src = "media/Music" + randomIndex + ".mp3";  // 背景音乐
+    mediaObj.src = "media/music" + randomIndex + ".mp3";  // 背景音乐
     mediaObj.loop = true;
     mediaObj.autoplay = true;
 
